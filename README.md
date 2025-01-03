@@ -91,7 +91,7 @@ As versões monocromáticas propostas como alternativa para a versão colorida s
 
 A paleta de cores selecionada para o projeto foi obtida com o auxílio do site https://coolors.co/, mas cada cor foi individualmente ponderada pelo desenvolvedor Front-End. Esta paleta de cores pode ser observada na figura abaixo.
 
-<picture>![Figura 1.Paleta de cores do Arpeggio](https://github.com/user-attachments/assets/bd7f6157-c786-44da-a533-82af1a022ecd)</picture>
+![Figura 1.Paleta de cores do Arpeggio](https://github.com/user-attachments/assets/bd7f6157-c786-44da-a533-82af1a022ecd)
 
 É importante reforçar que a paleta de cores envolve a seleção de cores mais frias como roxo e rosa, mas em tons mais fortes o que está de acordo com a referência que no caso é a iluminação das cidades cyberpunk com letreiros de neon, tanto com cores frias quanto cores quentes em tons mais fortes. Também foram usadas cores mais tradicionais como tons de cinza, preto e branco para completar a paleta de cores.
 
