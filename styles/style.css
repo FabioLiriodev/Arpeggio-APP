@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./index.css);
+
+:root {
+    font-size: 16px;
+    --fonte-titulo: 'Roboto Condensed', sans-serif;
+    --fonte-corpo: 'Lexend', sans-serif;
+    --peso-black: 900;
+    --peso-bold: 700;
+    --peso-medio: 500;
+    --peso-regular: 400;
+    --espaço-letras: 3px;
+
+    --fonte-size-2xl: 3.75rem;
+    --fonte-size-xl: 3rem;
+    --fonte-size-l: 2rem;
+    --fonte-size-xm: 1.5rem;
+    --fonte-size-m: 1.25rem;
+    --fonte-size-i: 1.12rem;
+    --fonte-size-b: 1rem;
+    --fonte-size-s: 0.75rem;
+    --fonte-size-xs: 0.5rem;
+
+    /*CORES*/
+
+    --background-gradiente: linear-gradient(to bottom left, #7B217B, #7209B7, #AE1EDF);
+    --cor-background: linear-gradient(45deg, #2E073F, #7A1CAC, #AD49E1);
+    --cor-primaria-dark: #240046;
+    --cor-primaria-medium: #7209B7;
+    --cor-primaria-light: #9B4DFF;
+    --cor-destaque-laranja: #FF7F00;
+    --cor-destaque-verde: #00FF00;
+    --cor-neutra-light: #E5E5E5;
+    --cor-neutra-medium: #6E859F;
+    --cor-neutra-dark: #121212;
+    --cor-border: rgba(255,255,255,.2);
+    --cor-border-hover: rgba(255, 255, 255, .1);
+
+    --padding-2xl:4rem;
+    --padding-xl: 3rem;
+    --padding-l: 2rem;
+    --padding-m: 1.5rem;
+    --padding-s: 1rem;
+    --padding-xs: 0.875rem;
+    --padding-2xs: 0.5rem;
+
+    --gap-2xl: 4rem;
+    --gap-xl: 3rem;
+    --gap-l: 2rem;
+    --gap-m: 1.5rem;
+    --gap-s: 1rem;
+    --gap-xs: 0.5rem;
+
+    --border-radius-s: 4px;
+    --border-radius-m: 40px;
+    --border-radius-l: 200px;
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--fonte-titulo);
+}
+
+h1 {
+    font-size: var(--fonte-size-l);
+    font-weight: var(--peso-black);
+    color: var(--cor-destaque-laranja);
+}
+
+h2 {
+    font-size: var(--fonte-size-xm);
+    font-weight: var(--peso-bold);
+}
+
+h3 {
+    font-size: var(--fonte-size-m);
+    font-weight: var(--peso-medio);
+}
+
+h4 {
+    font-size: var(--fonte-size-i);
+    font-weight: var(--peso-medio);
+}
+
+h5 {
+    font-size: var(--fonte-size-i);
+    font-weight: var(--peso-regular);
+}
+
+p {
+    font-family: var(--fonte-corpo);
+    font-weight: var(--peso-regular);
+}
+
+.conteudo {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding-s);
+    gap: var(--gap-s);
+}
+
+body {
+    background: var(--cor-background);
+    font-family: var(--fonte-corpo);
+    color: var(--cor-neutra-light);
+
+}
+
+
+}
