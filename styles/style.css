@@ -3,7 +3,10 @@
 @import url(./header.css);
 @import url(./footer.css);
 @import url(./index.css);
+@import url(./cta.css);
 @import url(./contato.css);
+@import url(./arpeggio.css);
+@import url(./about.css);
 
 :root {
     font-size: 16px;
@@ -48,6 +51,8 @@
     --padding-xs: 0.875rem;
     --padding-2xs: 0.5rem;
 
+    --gap-4xl: 6rem;
+    --gap-3xl: 5rem;
     --gap-2xl: 4rem;
     --gap-xl: 3rem;
     --gap-l: 2rem;
@@ -67,11 +72,26 @@ h1 {
     font-size: var(--fonte-size-l);
     font-weight: var(--peso-black);
     color: var(--cor-destaque-laranja);
+
+    @media(min-width: 1024px) {
+        font-size: var(--fonte-size-xl);
+    }
+
+    @media(min-width: 1440px) {
+        font-size: var(--fonte-size-2xl);
+    }
 }
 
 h2 {
     font-size: var(--fonte-size-xm);
     font-weight: var(--peso-bold);
+
+    @media(min-width: 1024px) {
+        font-size: var(--fonte-size-l);
+    }
+    @media(min-width: 1440px) {
+        font-size: var(--fonte-size-xl);
+    }
 }
 
 h3 {
@@ -92,6 +112,17 @@ h5 {
 p {
     font-family: var(--fonte-corpo);
     font-weight: var(--peso-regular);
+
+    @media(min-width: 768px) {
+        font-size: var(--fonte-size-m);
+    }
+
+    @media(min-width: 1024px) {
+        font-size: var(--fonte-size-2m);
+    }
+    @media(min-width: 1440px) {
+        font-size: var(--fonte-size-l);
+    }
 }
 
 .conteudo {
@@ -101,7 +132,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: var(--padding-s);
     gap: var(--gap-s);
 }
 

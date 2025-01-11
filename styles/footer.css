@@ -48,7 +48,7 @@
     text-decoration: none;
 
     @media(min-width: 767px) {
-      font-size: var(fonte-size-m);
+      font-size: var(fonte-size-i);
     }
   }
 
