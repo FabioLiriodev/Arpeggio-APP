@@ -3,6 +3,7 @@
 @import url(./header.css);
 @import url(./footer.css);
 @import url(./index.css);
+@import url(./contato.css);
 
 :root {
     font-size: 16px;
