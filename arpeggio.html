@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.png.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <title>Arpeggio APP | Seletor de streaming de música</title>
+    <link rel="stylesheet" href="styles/header.css" preload>
+    <link rel="stylesheet" href="styles/style.css" preload>
+    <link rel="stylesheet" href="styles/arpeggio.css" preload>
+    <link rel="stylesheet" href="styles/footer.css" preload>
+    
+</head>
+<body>
+
+    <header class="cabecalho">
+        <a href="index.html"><img class="cabecalho__logo" src="./assets/img/logo-arpeggio-small.png" alt="logo do Arpeggio"></a>
+        <nav class="cabecalho__barra" id="nav">
+            <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu" role="menu" class="cabecalho__barra-lista">
+                <li><a href="index.html" class="cabecalho__barra-lista-item">Início</a></li>
+                <li><a href="about.html" class="cabecalho__barra-lista-item" >Sobre</a></li>
+                <li><a href="arpeggio.html" class="cabecalho__barra-lista-item">Arpeggio</a></li>
+                <li><a href="contato.html" class="cabecalho__barra-lista-item">Contato</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <main class="ferramenta">
+        <section class="ferramenta__conteudo">
+            <div class="ferramenta__conteudo-formulario">
+                <form>
+                    <h1 class="ferramenta__conteudo-formulario-titulo">Qual é o streaming de música mais vantajoso para você?</h1>
+                    <div class="ferramenta__conteudo-formulario-inputs">
+                        <label for="nome">Nome do artista ou podcast</label>
+                        <div class="ferramenta__conteudo-formulario-inputs-nome">
+                            <input type="text" id="busca-input" name="nome" placeholder="Digite o nome" required>
+                        </div>
+                        <label for="tipo">Tipo</label>
+                        <div class="ferramenta__conteudo-formulario-inputs-tipo">
+                            <div>
+                                <input type="radio" id="musica" name="tipo" value="musica" required checked>
+                                <label for="música">Música</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="podcast" name="tipo" value="podcast" required>
+                                <label for="podcast">Podcast</label>
+                            </div>
+                        </div>
+                        <label for="regiao">Região</label>
+                        <div class="ferramenta__conteudo-formulario-inputs-regiao">
+                            <div>
+                                <input type="radio" id="brasil" name="regiao" value="BR" required checked>
+                                <img width="48" height="48" src="https://img.icons8.com/emoji/48/brazil-emoji.png" alt="Bandeira do Brasil">
+                                <label for="brasil">Brasil</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="usa" name="regiao" value="US" required>
+                                <img width="48" height="48" src="https://img.icons8.com/color/48/usa.png" alt="Bandeira dos EUA">
+                                <label for="usa">USA</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ferramenta__conteudo-botao">
+                    <button id="buscar-button" type="button" onclick="realizarBusca(); callRequest()">Buscar</button>
+                </div>
+                </form>
+            </div>
+        </section>
+    
+       <section id="emptystate" class="ferramenta__emptystate">
+            <img src="https://img.icons8.com/ios/50/nothing-found.png" alt="nothing-found"/>
+            <p class="ferramenta__emptystate-texto">Ah não! Você ainda não realizou nenhuma busca no Arpeggio!</p>
+        </section> 
+        <section class="ferramenta__resultado">
+            <div class="ferramenta__resultado-campo">
+                <h2 class="ferramenta__resultado-campo-titulo"></h2>
+                <div class="ferramenta__resultado-campo-spotify">
+                    <img src="./assets/img/Ícone Spotify.svg" alt="Ícone do Spotify">
+                    <p class="ferramenta__resultado-campo-spotify-texto"></p>
+                </div>
+                <div class="ferramenta__resultado-campo-deezer">
+                    <img src="./assets/img/Ícone Deezer.svg" alt="Ícone do Deezer">
+                    <p class="ferramenta__resultado-campo-deezer-texto"></p>
+                </div>
+                <div class="ferramenta__resultado-campo-tidal">
+                    <img src="./assets/img/Ícone Tidal.svg" alt="Ícone do Tidal">
+                    <p class="ferramenta__resultado-campo-tidal-texto"></p>
+                </div>
+                <div class="ferramenta__resultado-campo-youtube">
+                    <img src="./assets/img/Ícone Youtube.svg" alt="Ícone do YouTube">
+                    <p class="ferramenta__resultado-campo-youtube-texto"></p>
+                </div>
+                <h2 id="contador-uso" class="ferramenta__contador-titulo"></h2>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <img class="rodape__logo" src="./assets/img/logo-arpeggio-small.png" alt="logo do Arpeggio">
+            <div class="rodape__lista">
+                <ul class="rodape__lista__links">
+                    <li><a class="rodape__lista__links-item" href="index.html">Início</a></li>
+                    <li><a class="rodape__lista__links-item" href="about.html">Sobre</a></li>
+                    <li><a class="rodape__lista__links-item" href="arpeggio.html">Arpeggio</a></li>
+                    <li><a class="rodape__lista__links-item" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <small class="rodape__texto">Desenvolvido por Felipe Mattos e Fábio Lirio</small>
+    </footer>
+<script src="mobile-navbar.js"></script>
+<script src="arpeggio.js"></script>
+</body>
+</html>
