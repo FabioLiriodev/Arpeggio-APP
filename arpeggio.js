@@ -28,6 +28,9 @@ function realizarBusca() {
     const emptyState = document.querySelector(".ferramenta__emptystate");
     const resultadoSection = document.querySelector(".ferramenta__resultado");
     const contadorSection = document.querySelector(".ferramenta__contador-titulo");
+
+    
+
     if (emptyState) {
         emptyState.classList.add("hidden"); // Esconde a seção de estado vazio
     }
