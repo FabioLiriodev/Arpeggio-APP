@@ -60,7 +60,18 @@ Após o desenvolvimento da ideação no Figma, o resultado obtido foi:
 
 <div align="center">
 
-![Logo Arpeggio versão mobile](image.png)
+![image](https://github.com/user-attachments/assets/5d092dd7-81bd-482a-86f7-17dc49e14054)
+
+![image](https://github.com/user-attachments/assets/6ff7fa8b-3464-4369-9578-0db2dfe388b0)
+
+
+</div>
+
+As versões monocromáticas propostas como alternativa para a versão colorida são:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/07ca6822-e4ea-4809-9154-5cde2bd9af7f)
 
 ![Logo Arpeggio versão desktop](image-1.png)
 
