@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    font-size: 16px;
+    --fonte-titulo: 'Roboto Condensed', sans-serif;
+    --fonte-corpo: 'Lexend', sans-serif;
+    --peso-negrito: 700;
+    --peso-regular: 400;
+    --espaço-letras: 3px;
+
+    --fonte-size-2xl: 3.75rem;
+    --fonte-size-xl: 3rem;
+    --fonte-size-l: 2rem;
+    --fonte-size-2m: 1.5rem;
+    --fonte-size-m: 1.25rem;
+    --fonte-size-i: 1.12rem;
+    --fonte-size-b: 1rem;
+    --fonte-size-s: 0.75rem;
+    --fonte-size-xs: 0.5rem;
+
+    /*CORES*/
+
+    --background-gradiente: linear-gradient(-45deg, #2E073F, #7A1CAC, #AD49E1);
+    --background-menu: #240046;
+    --cor-destaque-laranja: #FF7F00;
+    --cor-destaque-roxo: #551A8B;
+    --cor-destaque-verde: #00FF00;
+    --background-branco: #e9ecef;
+    --background-preto: #212529;
+    --cor-texto-branco: #E5E5E5;
+    --cor-cinza: #6E859F;
+    --cor-texto-preto: #121212;
+    --cor-borda: rgba(255,255,255,.2);
+    --cor-borda-hover: rgba(255, 255, 255, .1);
+
+    --padding-2xl:4rem;
+    --padding-xl: 3rem;
+    --padding-l: 2rem;
+    --padding-m: 1.5rem;
+    --padding-s: 1rem;
+    --padding-xs: 0.875rem;
+    --padding-2xs: 0.5rem;
+
+    --gap-2xl: 4rem;
+    --gap-xl: 3rem;
+    --gap-l: 2rem;
+    --gap-m: 1.5rem;
+    --gap-s: 1rem;
+    --gap-xs: 0.5rem;
+
+    --borda-redonda-s: 4px;
+    --bordar-redonda-m: 40px;
+    --borda-redonda-l: 200px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    width: 100vw;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../assets/img/reuniao-large.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.descricao__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(114, 9, 183, 0.5);
+    border: 2px solid rgba(255, 255, 255, .2);
+    padding: 3rem 1rem;
+    height: 100vh;
+    width: 100%;
+
+    @media(min-width: 768px) {
+        padding: 2rem;
+    }
+}
+
+.descricao__texto-titulo {
+    font-family: var(--fonte-titulo);
+    font-weight: var(--peso-negrito);
+    font-size: var(--fonte-size-2m);
+    color: #FFFF80;
+
+    @media(min-width: 768px) {
+        font-size: var(--fonte-size-l);
+    }
+    @media(min-width: 1024px){
+        font-size: var(--fonte-size-xl);
+    }
+}
+
+.descricao__texto-subtitulo {
+    font-weight: var(--peso-negrito);
+    font-size: var(--fonte-size-i);
+    padding: var(--padding-s);
+    font-family: var(--fonte-corpo);
+    color: #F5F5DC;
+
+    @media(min-width: 768px) {
+        font-size: var(--fonte-size-2m);
+    }
+    @media(min-width: 1024px){
+        font-size: var(--fonte-size-l);
+    }
+}
+
+.descricao__texto-paragrafo {
+    font-weight: var(--peso-regular);
+    font-size: var(--fonte-size-b);
+    font-family: var(--fonte-corpo);
+    padding: var(--padding-s);
+    color:var(--cor-texto-branco);
+
+    @media(min-width: 768px) {
+        font-size: var(--fonte-size-i);
+    }
+    @media(min-width: 1024px){
+        font-size: var(--fonte-size-2m);
+    }
+}
+
+.descricao__texto-paragrafo > strong {
+    color:#90EE90;
+}
+
+
+.descricao__texto-botao {
+    background-color: #90EE90;
+    padding: var(--padding-s);
+    border: none;
+    border-radius: 200px;
+    width: 17.5rem;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 1rem;
+
+    @media(min-width: 768px) {
+        width: 20rem;
+    }
+
+    @media(min-width: 1024px){
+        width: 28rem;
+    }
+}
+
+.descricao__texto-botao-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--fonte-corpo);
+    font-weight: var(--peso-negrito);
+    font-size: var(--fonte-size-m);
+    color: var(--cor-texto-preto);
+}
+
+
+.descricao__texto-botao:hover, .descricao__texto-botao-link:hover {
+    background-color: var(--cor-texto-branco);
+    color:var(--cor-destaque-laranja);
+}
+}
